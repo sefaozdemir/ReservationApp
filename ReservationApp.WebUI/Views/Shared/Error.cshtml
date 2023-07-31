@@ -1,0 +1,13 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+
+@if (ViewData["UyarıMesaji"] != null)
+{
+    <p>
+        <strong>Uyarı:</strong> <code>@ViewData["UyarıMesaji"]</code>
+    </p>
+}
+

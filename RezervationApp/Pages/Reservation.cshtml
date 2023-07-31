@@ -1,0 +1,56 @@
+﻿@page
+
+@using ReservationApp.Core
+@model Core.Entities.Reservation
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="text-center">
+    @*<h1 class="display-4">Hoşgeldiniz</h1>*@
+
+
+    <div class="container">
+        <div class="col-md-6 mx-auto text-center">
+            <div class="header-title">
+                <h1 class="wv-heading--title">
+                    Hızlı Rezervasyon Oluştur
+                </h1>
+                <h2 class="wv-heading--subtitle">
+                    @*Lorem ipsum dolor sit amet! Neque porro quisquam est qui do dolor amet, adipisci velit...*@
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="myform form ">
+                    <form  method="post" >
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control my-input" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control my-input" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" min="0" name="tel" id="tel" class="form-control my-input" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="date"  name="tarih" id="tarih" class="form-control my-input"  placeholder="Tarih">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class=" btn btn-success">Rezervasyon Oluştur</button>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
